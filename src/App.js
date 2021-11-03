@@ -8,7 +8,7 @@ function App() {
   const [pizzas, setPizzas] = useState([]);
 
   useEffect(() => {
-    axios.get("https://github.com/janbolotbatyrov/react-pizza-1/blob/master/public/db.json").then(({ data }) => { 
+    axios.get("https://pizza-react-1-dusky.vercel.app/db.json").then(({ data }) => { 
       setPizzas(data.pizzas)
      })
   }, []);
