@@ -19,7 +19,7 @@ const Header = () => {
         <div className="header__cart">
           <Link to='/cart'>
             <Button className="button--cart">
-              <span>521 ₽</span>
+              <span>522 ₽</span>
               <div className="button__delimiter"></div>
               <svg
                 width="18"
