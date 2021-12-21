@@ -1,13 +1,13 @@
-import logoSvg from '../assets/img/pizza-logo.svg'
-import React from 'react'
-import Button from './Button'
-import { Link } from 'react-router-dom'
+import logoSvg from "../assets/img/pizza-logo.svg";
+import React from "react";
+import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header">
       <div className="container">
-        <Link to='/'>
+        <Link to="/">
           <div className="header__logo">
             <img width="38" src={logoSvg} alt="Pizza logo" />
             <div>
@@ -16,8 +16,12 @@ const Header = () => {
             </div>
           </div>
         </Link>
+        <a href="https://janbolotbatyrov.github.io/nurchik-site/">
+          Ссылка на второй сайт
+        </a>
+
         <div className="header__cart">
-          <Link to='/cart'>
+          <Link to="/cart">
             <Button className="button--cart">
               <span>522 ₽</span>
               <div className="button__delimiter"></div>
@@ -56,7 +60,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
